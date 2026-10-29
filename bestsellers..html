@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Browse the Apex Press demo bestseller shelf by genre and discover sample books from our publishing portfolio.">
+	<title>Bestsellers | Apex Press</title>
+	<script>
+		window.tailwind = {
+			config: {
+				theme: {
+					extend: {
+						fontFamily: {
+							sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+							serif: ['"Playfair Display"', 'serif'],
+						},
+						colors: {
+							brand: {
+								dark: '#111722',
+								card: '#3a4149',
+								accent: '#6366f1',
+								gold: '#fbbf24'
+							}
+						}
+					}
+				}
+			}
+		};
+	</script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="bestsellers-page">
+	<header id="navbar" class="fixed top-0 left-0 w-full z-50 px-6 lg:px-16 py-6 transition-all duration-300">
+		<div class="max-w-7xl mx-auto flex items-center justify-between">
+			<a href="index.html" class="flex items-center gap-3 group">
+				<div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform">
+					<i class="fa-solid fa-book-open-reader text-white text-lg"></i>
+				</div>
+				<div class="flex flex-col">
+					<span class="text-xl font-extrabold tracking-tight text-white font-serif">Apex Press</span>
+					<span class="text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">Publishing House</span>
+				</div>
+			</a>
+
+			<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300" aria-label="Main navigation">
+				<a href="index.html" class="hover:text-indigo-400 transition-colors">Home</a>
+				<a href="bestsellers..html" aria-current="page" class="text-white hover:text-indigo-400 transition-colors">Bestsellers</a>
+				<a href="service.html" class="hover:text-indigo-400 transition-colors">Services</a>
+				<a href="authors.html" class="hover:text-indigo-400 transition-colors">For Authors</a>
+				<a href="about.html" class="hover:text-indigo-400 transition-colors">About</a>
+			</nav>
+
+			<div class="flex items-center gap-4">
+				<a href="index.html#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-lg shadow-indigo-600/30 transition-all hover:-translate-y-0.5">
+					<span>Publish With Us</span>
+					<i class="fa-solid fa-arrow-right text-xs"></i>
+				</a>
+				<button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white p-2 text-xl focus:outline-none" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+			</div>
+		</div>
+
+		<div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-brand-dark/95 backdrop-blur-xl border-b border-gray-800 py-6 px-6 shadow-2xl transition-all">
+			<nav class="flex flex-col gap-4 text-base font-medium text-gray-300" aria-label="Mobile navigation">
+				<a href="index.html" class="hover:text-indigo-400">Home</a>
+				<a href="bestsellers..html" aria-current="page" class="text-white hover:text-indigo-400">Bestsellers</a>
+				<a href="service.html" class="hover:text-indigo-400">Services</a>
+				<a href="authors.html" class="hover:text-indigo-400">For Authors</a>
+				<a href="about.html" class="hover:text-indigo-400">About</a>
+				<a href="index.html#contact" class="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-lg shadow-indigo-600/30">
+					<span>Publish With Us</span>
+					<i class="fa-solid fa-arrow-right text-xs"></i>
+				</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="bestsellers-hero">
+			<div class="bestsellers-container bestsellers-hero-grid">
+				<div class="bestsellers-hero-copy">
+					<p class="bestsellers-kicker"><span></span> The Apex Press shelf</p>
+					<h1>Stories readers<br><em>take with them.</em></h1>
+					<p class="bestsellers-lede">Explore a sample collection of books supported by Apex Press, across fiction, mystery, memoir, and children's stories.</p>
+					<div class="bestsellers-actions">
+						<a href="#book-shelf" class="bestsellers-primary-link">Browse the shelf <i class="fa-solid fa-arrow-down"></i></a>
+						<span class="bestsellers-demo-label"><i class="fa-solid fa-circle-info"></i> Demo titles and rankings</span>
+					</div>
+					<p class="bestsellers-disclaimer">Sample titles, author names, cover art, and ranking numbers are placeholders, not sales claims.</p>
+				</div>
+
+				<div class="bestsellers-feature">
+					<div class="bestsellers-feature-topline">
+						<span>Featured demo title</span>
+						<span class="bestsellers-rank">No. 01</span>
+					</div>
+					<div class="bestsellers-feature-content">
+						<div class="best-cover best-cover-lighthouse">
+							<img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&amp;fit=crop&amp;w=650&amp;q=85" alt="Demo ocean artwork for The Last Lighthouse" fetchpriority="high">
+							<span class="best-cover-shade"></span>
+							<span class="best-cover-imprint">APEX PRESS <span>DEMO</span></span>
+							<span class="best-cover-symbol"><i class="fa-solid fa-tower-observation" aria-hidden="true"></i></span>
+							<span class="best-cover-title">The Last<br>Lighthouse</span>
+							<span class="best-cover-author">Elena Hart</span>
+						</div>
+						<div class="bestsellers-feature-copy">
+							<span class="best-book-genre">Literature &amp; fiction</span>
+							<h2>The Last Lighthouse</h2>
+							<p class="best-book-byline">A novel by <a href="authors.html#author-library">Elena Hart</a></p>
+							<p class="best-book-description">When a daughter returns to her family's coast, the light she thought she knew begins to tell a different story.</p>
+							<a href="authors.html#author-library" class="best-book-link">Meet the author <i class="fa-solid fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="bestsellers-feature-footer"><span>Sample portfolio placement</span><span>Replace with verified list data</span></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bestsellers-shelf" id="book-shelf">
+			<div class="bestsellers-container">
+				<div class="bestsellers-section-heading">
+					<div>
+						<p class="bestsellers-kicker"><span></span> Browse by genre</p>
+						<h2>Find your <em>next read.</em></h2>
+					</div>
+					<p>Use this demo shelf to feature your catalog. Add verified sales positions, review details, and retailer links when your real titles are ready.</p>
+				</div>
+
+				<div class="bestsellers-controls">
+					<div class="bestsellers-filters" role="group" aria-label="Filter books by genre">
+						<button type="button" class="bestseller-filter is-active" data-filter="all" aria-pressed="true">All books</button>
+						<button type="button" class="bestseller-filter" data-filter="fiction" aria-pressed="false">Fiction</button>
+						<button type="button" class="bestseller-filter" data-filter="thriller" aria-pressed="false">Mystery &amp; thriller</button>
+						<button type="button" class="bestseller-filter" data-filter="memoir" aria-pressed="false">Memoir</button>
+						<button type="button" class="bestseller-filter" data-filter="children" aria-pressed="false">Children's</button>
+					</div>
+					<p id="bestseller-results" aria-live="polite">Showing 4 demo books</p>
+				</div>
+
+				<div class="bestsellers-grid">
+					<article class="bestseller-card" id="fiction" data-genre="fiction">
+						<div class="bestseller-card-cover best-cover best-cover-lighthouse">
+							<img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&amp;fit=crop&amp;w=500&amp;q=85" alt="Demo cover image for The Last Lighthouse" loading="eager">
+							<span class="best-cover-shade"></span>
+							<span class="bestseller-card-rank">No. 01 <span>DEMO</span></span>
+							<span class="best-cover-symbol"><i class="fa-solid fa-tower-observation" aria-hidden="true"></i></span>
+							<span class="best-cover-title">The Last<br>Lighthouse</span>
+							<span class="best-cover-author">Elena Hart</span>
+						</div>
+						<div class="bestseller-card-info">
+							<span class="best-book-genre">Literature &amp; fiction</span>
+							<h3>The Last Lighthouse</h3>
+							<p class="best-book-byline">by <a href="authors.html#author-library">Elena Hart</a></p>
+							<p class="bestseller-card-description">A coastal family, a long-held secret, and a homecoming that changes everything.</p>
+							<div class="bestseller-card-bottom"><span>eBook · Print</span><a href="authors.html#author-library" aria-label="Meet demo author Elena Hart">Meet author <i class="fa-solid fa-arrow-right"></i></a></div>
+						</div>
+					</article>
+
+					<article class="bestseller-card" id="thriller" data-genre="thriller">
+						<div class="bestseller-card-cover best-cover best-cover-smoke">
+							<img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&amp;fit=crop&amp;w=500&amp;q=85" alt="Demo cover image for A Measure of Smoke" loading="eager">
+							<span class="best-cover-shade"></span>
+							<span class="bestseller-card-rank">No. 02 <span>DEMO</span></span>
+							<span class="best-cover-symbol"><i class="fa-solid fa-key" aria-hidden="true"></i></span>
+							<span class="best-cover-title">A Measure<br>of Smoke</span>
+							<span class="best-cover-author">Malcolm Reed</span>
+						</div>
+						<div class="bestseller-card-info">
+							<span class="best-book-genre">Mystery &amp; thriller</span>
+							<h3>A Measure of Smoke</h3>
+							<p class="best-book-byline">by <a href="authors.html#author-library">Malcolm Reed</a></p>
+							<p class="bestseller-card-description">In a house full of witnesses, every version of the night is different.</p>
+							<div class="bestseller-card-bottom"><span>eBook · Paperback</span><a href="authors.html#author-library" aria-label="Meet demo author Malcolm Reed">Meet author <i class="fa-solid fa-arrow-right"></i></a></div>
+						</div>
+					</article>
+
+					<article class="bestseller-card" data-genre="memoir">
+						<div class="bestseller-card-cover best-cover best-cover-forward">
+							<img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&amp;fit=crop&amp;w=500&amp;q=85" alt="Demo cover image for What We Carried Forward" loading="eager">
+							<span class="best-cover-shade"></span>
+							<span class="bestseller-card-rank">No. 03 <span>DEMO</span></span>
+							<span class="best-cover-symbol"><i class="fa-solid fa-seedling" aria-hidden="true"></i></span>
+							<span class="best-cover-title">What We<br>Carried<br>Forward</span>
+							<span class="best-cover-author">Nia Alvarez</span>
+						</div>
+						<div class="bestseller-card-info">
+							<span class="best-book-genre">Memoir</span>
+							<h3>What We Carried Forward</h3>
+							<p class="best-book-byline">by <a href="authors.html#author-library">Nia Alvarez</a></p>
+							<p class="bestseller-card-description">A family story about inherited courage, beginning again, and finding home.</p>
+							<div class="bestseller-card-bottom"><span>Hardcover · eBook</span><a href="authors.html#author-library" aria-label="Meet demo author Nia Alvarez">Meet author <i class="fa-solid fa-arrow-right"></i></a></div>
+						</div>
+					</article>
+
+					<article class="bestseller-card" data-genre="children">
+						<div class="bestseller-card-cover best-cover best-cover-comet">
+							<img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&amp;fit=crop&amp;w=500&amp;q=85" alt="Demo cover image for The Little Comet Club" loading="eager">
+							<span class="best-cover-shade"></span>
+							<span class="bestseller-card-rank">No. 04 <span>DEMO</span></span>
+							<span class="best-cover-symbol"><i class="fa-solid fa-star" aria-hidden="true"></i></span>
+							<span class="best-cover-title">The Little<br>Comet Club</span>
+							<span class="best-cover-author">Oliver Price</span>
+						</div>
+						<div class="bestseller-card-info">
+							<span class="best-book-genre">Children's fiction</span>
+							<h3>The Little Comet Club</h3>
+							<p class="best-book-byline">by <a href="authors.html#author-library">Oliver Price</a></p>
+							<p class="bestseller-card-description">Four friends build a backyard observatory and find a sky full of possibility.</p>
+							<div class="bestseller-card-bottom"><span>Illustrated · Hardcover</span><a href="authors.html#author-library" aria-label="Meet demo author Oliver Price">Meet author <i class="fa-solid fa-arrow-right"></i></a></div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="bestsellers-publishing-cta">
+			<div class="bestsellers-container bestsellers-cta-inner">
+				<div>
+					<p class="bestsellers-kicker"><span></span> Have a book of your own?</p>
+					<h2>Let's help your story<br><em>find its readers.</em></h2>
+				</div>
+				<a class="bestsellers-cta-link" href="index.html#contact">Talk about your book <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="apf-footer">
+		<div class="apf-top bestsellers-footer-top">
+			<div class="apf-intro">
+				<p class="apf-eyebrow">Apex Press · Books and the people behind them</p>
+				<h2 class="apf-heading">Your story can be <span>next.</span></h2>
+				<p class="apf-desc">Explore our publishing services and find the right support for your book.</p>
+				<div class="apf-cta-row">
+					<a href="service.html" class="apf-btn apf-btn--solid">Publishing services</a>
+					<a href="authors.html" class="apf-btn apf-btn--outline">Meet our authors</a>
+				</div>
+				<div class="apf-press">
+					<span>From manuscript to market</span>
+					<div class="apf-press-logos"><span>Writing</span><span>Publishing</span><span>Distribution</span></div>
+				</div>
+			</div>
+			<div class="bestsellers-footer-book" aria-hidden="true">
+				<img src="images/stilljudaas-fictional.jpg" alt="">
+			</div>
+		</div>
+		<div class="apf-links">
+			<div class="apf-links-col">
+				<h4>Company</h4>
+				<a href="index.html">Home</a>
+				<a href="authors.html">Our Authors</a>
+				<a href="about.html">About Us</a>
+			</div>
+			<div class="apf-links-col">
+				<h4>Browse</h4>
+				<a href="bestsellers..html#book-shelf">All demo books</a>
+				<a href="bestsellers..html#fiction">Fiction</a>
+				<a href="bestsellers..html#thriller">Mystery &amp; thriller</a>
+			</div>
+			<div class="apf-links-col">
+				<h4>Publishing</h4>
+				<a href="service.html">Services</a>
+				<a href="service.html#distribution">Distribution</a>
+				<a href="service.html#marketing">Marketing</a>
+			</div>
+			<div class="apf-links-col apf-links-col--social">
+				<h4>Follow Us</h4>
+				<div class="apf-social">
+					<a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="apf-bottom">
+			<p id="apfYear">&copy; 2026 Apex Press Publishing House. All rights reserved.</p>
+			<div class="apf-bottom-links">
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms of Service</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>

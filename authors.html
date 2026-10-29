@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Meet the authors and explore sample books brought to life with Apex Press publishing services.">
+	<title>Our Authors | Apex Press</title>
+	<script>
+		window.tailwind = {
+			config: {
+				theme: {
+					extend: {
+						fontFamily: {
+							sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+							serif: ['"Playfair Display"', 'serif'],
+						},
+						colors: {
+							brand: {
+								dark: '#111722',
+								card: '#3a4149',
+								accent: '#6366f1',
+								gold: '#fbbf24'
+							}
+						}
+					}
+				}
+			}
+		};
+	</script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="authors-page">
+	<header id="navbar" class="fixed top-0 left-0 w-full z-50 px-6 lg:px-16 py-6 transition-all duration-300">
+		<div class="max-w-7xl mx-auto flex items-center justify-between">
+			<a href="index.html" class="flex items-center gap-3 group">
+				<div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform">
+					<i class="fa-solid fa-book-open-reader text-white text-lg"></i>
+				</div>
+				<div class="flex flex-col">
+					<span class="text-xl font-extrabold tracking-tight text-white font-serif">Apex Press</span>
+					<span class="text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">Publishing House</span>
+				</div>
+			</a>
+
+			<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300" aria-label="Main navigation">
+				<a href="index.html" class="hover:text-indigo-400 transition-colors">Home</a>
+				<a href="bestsellers..html" class="hover:text-indigo-400 transition-colors">Bestsellers</a>
+				<a href="service.html" class="hover:text-indigo-400 transition-colors">Services</a>
+				<a href="authors.html" aria-current="page" class="text-white hover:text-indigo-400 transition-colors">For Authors</a>
+				<a href="about.html" class="hover:text-indigo-400 transition-colors">About</a>
+			</nav>
+
+			<div class="flex items-center gap-4">
+				<a href="index.html#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-lg shadow-indigo-600/30 transition-all hover:-translate-y-0.5">
+					<span>Publish With Us</span>
+					<i class="fa-solid fa-arrow-right text-xs"></i>
+				</a>
+				<button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white p-2 text-xl focus:outline-none" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+			</div>
+		</div>
+
+		<div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-brand-dark/95 backdrop-blur-xl border-b border-gray-800 py-6 px-6 shadow-2xl transition-all">
+			<nav class="flex flex-col gap-4 text-base font-medium text-gray-300" aria-label="Mobile navigation">
+				<a href="index.html" class="hover:text-indigo-400">Home</a>
+				<a href="bestsellers..html" class="hover:text-indigo-400">Bestsellers</a>
+				<a href="service.html" class="hover:text-indigo-400">Services</a>
+				<a href="authors.html" aria-current="page" class="text-white hover:text-indigo-400">For Authors</a>
+				<a href="about.html" class="hover:text-indigo-400">About</a>
+				<a href="index.html#contact" class="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-lg shadow-indigo-600/30">
+					<span>Publish With Us</span>
+					<i class="fa-solid fa-arrow-right text-xs"></i>
+				</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="authors-hero">
+			<div class="authors-container authors-hero-grid">
+				<div class="authors-hero-copy">
+					<p class="authors-kicker"><span></span> Author stories</p>
+					<h1>Big ideas deserve <em>a beautiful life in print.</em></h1>
+					<p class="authors-hero-lede">Meet the voices behind our sample books and explore the craft, care, and publishing support that help each story reach its readers.</p>
+					<div class="authors-hero-actions">
+						<a href="#author-library" class="authors-button authors-button-primary">Explore the authors <i class="fa-solid fa-arrow-down"></i></a>
+						<a href="service.html" class="authors-text-link">See how we help <i class="fa-solid fa-arrow-right"></i></a>
+					</div>
+					<p class="authors-demo-note"><i class="fa-solid fa-circle-info"></i> Sample names, titles, and portraits are for demonstration.</p>
+				</div>
+
+				<div class="authors-hero-feature" aria-label="Featured sample author and book">
+					<div class="authors-feature-cover book-cover book-cover-lighthouse">
+						<span class="cover-imprint">APEX PRESS <span>DEMO EDITION</span></span>
+						<span class="cover-symbol" aria-hidden="true"><i class="fa-solid fa-tower-observation"></i></span>
+						<span class="cover-title">The Last<br>Lighthouse</span>
+						<span class="cover-author">A novel by Elena Hart</span>
+					</div>
+					<div class="authors-feature-caption">
+						<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=220&amp;q=85" alt="Demo portrait of author Elena Hart" fetchpriority="high">
+						<div>
+							<span>Featured sample author</span>
+							<strong>Elena Hart</strong>
+							<small>Contemporary fiction</small>
+						</div>
+						<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+					</div>
+					<span class="authors-feature-index" aria-hidden="true">01 / 04</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="authors-library" id="author-library">
+			<div class="authors-container">
+				<div class="authors-section-heading">
+					<div>
+						<p class="authors-kicker"><span></span> A sample portfolio</p>
+						<h2>Books take a team.<br><em>Meet the authors.</em></h2>
+					</div>
+					<p>Every project has its own voice. Browse these demo profiles by genre and see a few ways our publishing team can help bring a book together.</p>
+				</div>
+
+				<div class="authors-filter-row">
+					<div class="authors-filters" role="group" aria-label="Filter authors by genre">
+						<button class="author-filter is-active" type="button" data-filter="all" aria-pressed="true">All authors</button>
+						<button class="author-filter" type="button" data-filter="fiction" aria-pressed="false">Fiction</button>
+						<button class="author-filter" type="button" data-filter="thriller" aria-pressed="false">Mystery &amp; thriller</button>
+						<button class="author-filter" type="button" data-filter="memoir" aria-pressed="false">Memoir</button>
+						<button class="author-filter" type="button" data-filter="children" aria-pressed="false">Children's</button>
+					</div>
+					<p id="author-results" class="authors-result-count" aria-live="polite">Showing 4 demo authors</p>
+				</div>
+
+				<div class="authors-grid" id="authors-grid">
+					<article class="author-card" data-genre="fiction">
+						<div class="author-profile">
+							<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=240&amp;q=85" alt="Demo portrait of Elena Hart" loading="eager">
+							<div class="author-profile-copy">
+								<span class="author-demo-label">Demo author</span>
+								<h3>Elena Hart</h3>
+								<p>Contemporary fiction</p>
+							</div>
+							<span class="author-profile-mark" aria-hidden="true">01</span>
+						</div>
+						<div class="author-book-row">
+							<div class="book-cover book-cover-lighthouse author-card-cover" aria-label="Demo cover for The Last Lighthouse by Elena Hart">
+								<span class="cover-imprint">APEX <span>DEMO</span></span>
+								<span class="cover-symbol" aria-hidden="true"><i class="fa-solid fa-tower-observation"></i></span>
+								<span class="cover-title">The Last<br>Lighthouse</span>
+								<span class="cover-author">Elena Hart</span>
+							</div>
+							<div class="author-book-copy">
+								<span class="author-book-label">Featured title</span>
+								<h4>The Last Lighthouse</h4>
+								<p>A quiet coastal town, a family secret, and one last chance to come home.</p>
+								<span class="author-support">Editing · Cover design · eBook + print</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="author-card" data-genre="thriller">
+						<div class="author-profile">
+							<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=240&amp;q=85" alt="Demo portrait of Malcolm Reed" loading="eager">
+							<div class="author-profile-copy">
+								<span class="author-demo-label">Demo author</span>
+								<h3>Malcolm Reed</h3>
+								<p>Mystery &amp; thriller</p>
+							</div>
+							<span class="author-profile-mark" aria-hidden="true">02</span>
+						</div>
+						<div class="author-book-row">
+							<div class="book-cover book-cover-smoke author-card-cover" aria-label="Demo cover for A Measure of Smoke by Malcolm Reed">
+								<span class="cover-imprint">APEX <span>DEMO</span></span>
+								<span class="cover-symbol" aria-hidden="true"><i class="fa-solid fa-key"></i></span>
+								<span class="cover-title">A Measure<br>of Smoke</span>
+								<span class="cover-author">Malcolm Reed</span>
+							</div>
+							<div class="author-book-copy">
+								<span class="author-book-label">Featured title</span>
+								<h4>A Measure of Smoke</h4>
+								<p>A locked-room mystery where every witness remembers a different story.</p>
+								<span class="author-support">Development · Proofreading · Distribution</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="author-card" data-genre="memoir">
+						<div class="author-profile">
+							<img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&amp;fit=crop&amp;w=240&amp;q=85" alt="Demo portrait of Nia Alvarez" loading="eager">
+							<div class="author-profile-copy">
+								<span class="author-demo-label">Demo author</span>
+								<h3>Nia Alvarez</h3>
+								<p>Memoir &amp; personal growth</p>
+							</div>
+							<span class="author-profile-mark" aria-hidden="true">03</span>
+						</div>
+						<div class="author-book-row">
+							<div class="book-cover book-cover-forward author-card-cover" aria-label="Demo cover for What We Carried Forward by Nia Alvarez">
+								<span class="cover-imprint">APEX <span>DEMO</span></span>
+								<span class="cover-symbol" aria-hidden="true"><i class="fa-solid fa-seedling"></i></span>
+								<span class="cover-title">What We<br>Carried<br>Forward</span>
+								<span class="cover-author">Nia Alvarez</span>
+							</div>
+							<div class="author-book-copy">
+								<span class="author-book-label">Featured title</span>
+								<h4>What We Carried Forward</h4>
+								<p>A family memoir about inherited courage, starting over, and finding home.</p>
+								<span class="author-support">Line editing · Interior layout · Publishing</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="author-card" data-genre="children">
+						<div class="author-profile">
+							<img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&amp;fit=crop&amp;w=240&amp;q=85" alt="Demo portrait of Oliver Price" loading="eager">
+							<div class="author-profile-copy">
+								<span class="author-demo-label">Demo author</span>
+								<h3>Oliver Price</h3>
+								<p>Children's fiction</p>
+							</div>
+							<span class="author-profile-mark" aria-hidden="true">04</span>
+						</div>
+						<div class="author-book-row">
+							<div class="book-cover book-cover-comet author-card-cover" aria-label="Demo cover for The Little Comet Club by Oliver Price">
+								<span class="cover-imprint">APEX <span>DEMO</span></span>
+								<span class="cover-symbol" aria-hidden="true"><i class="fa-solid fa-star"></i></span>
+								<span class="cover-title">The Little<br>Comet Club</span>
+								<span class="cover-author">Oliver Price</span>
+							</div>
+							<div class="author-book-copy">
+								<span class="author-book-label">Featured title</span>
+								<h4>The Little Comet Club</h4>
+								<p>Four friends build a backyard observatory and discover a sky full of possibility.</p>
+								<span class="author-support">Illustration · Typesetting · Audiobook</span>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="authors-process">
+			<div class="authors-container">
+				<div class="authors-process-heading">
+					<p class="authors-kicker"><span></span> From manuscript to market</p>
+					<h2>Good stories get <em>the right support.</em></h2>
+				</div>
+				<div class="authors-process-grid">
+					<a href="service.html#editing" class="authors-process-item">
+						<span>01 / Shape the story</span>
+						<h3>Writing &amp; editing</h3>
+						<p>Find the structure, clarity, and voice your manuscript needs.</p>
+						<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+					</a>
+					<a href="service.html#design" class="authors-process-item">
+						<span>02 / Make it a book</span>
+						<h3>Design &amp; production</h3>
+						<p>Bring the pages together with thoughtful covers and professional formatting.</p>
+						<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+					</a>
+					<a href="service.html#distribution" class="authors-process-item">
+						<span>03 / Find its readers</span>
+						<h3>Publishing &amp; reach</h3>
+						<p>Prepare your book for retail, distribution, and its next audience.</p>
+						<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="authors-cta">
+			<div class="authors-container authors-cta-inner">
+				<div>
+					<p class="authors-kicker"><span></span> Your story starts here</p>
+					<h2>Ready to put your book <em>in motion?</em></h2>
+				</div>
+				<a href="service.html" class="authors-button authors-button-primary">Explore publishing services <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="apf-footer">
+		<div class="apf-top authors-footer-top">
+			<div class="apf-intro">
+				<p class="apf-eyebrow">Apex Press · Independent publishing support</p>
+				<h2 class="apf-heading">Your next chapter <span>starts here.</span></h2>
+				<p class="apf-desc">From early pages to a finished book, our team helps authors make every step count.</p>
+				<div class="apf-cta-row">
+					<a href="service.html" class="apf-btn apf-btn--solid">Explore services</a>
+					<a href="about.html" class="apf-btn apf-btn--outline">About Apex Press</a>
+				</div>
+				<div class="apf-press">
+					<span>Support for every stage</span>
+					<div class="apf-press-logos">
+						<span>Writing</span>
+						<span>Publishing</span>
+						<span>Marketing</span>
+					</div>
+				</div>
+			</div>
+			<div class="authors-footer-art" aria-hidden="true">
+				<img class="authors-footer-book authors-footer-book-back" src="images/thecozybook-fiction.jpg" alt="">
+				<img class="authors-footer-book authors-footer-book-front" src="images/theskykeeperofMARSEille-fiction.jpg" alt="">
+			</div>
+		</div>
+		<div class="apf-links">
+			<div class="apf-links-col">
+				<h4>Company</h4>
+				<a href="index.html">Home</a>
+				<a href="about.html">About Us</a>
+				<a href="authors.html" aria-current="page">Our Authors</a>
+			</div>
+			<div class="apf-links-col">
+				<h4>Services</h4>
+				<a href="service.html#writing">Writing &amp; Editing</a>
+				<a href="service.html#design">Design &amp; Formatting</a>
+				<a href="service.html#publishing">Publishing</a>
+				<a href="service.html#marketing">Marketing</a>
+			</div>
+			<div class="apf-links-col">
+				<h4>Start a project</h4>
+				<a href="service.html">Explore services</a>
+				<a href="index.html#projects">Explore our work</a>
+			</div>
+			<div class="apf-links-col apf-links-col--social">
+				<h4>Follow Us</h4>
+				<div class="apf-social">
+					<a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="apf-bottom">
+			<p id="apfYear">&copy; 2026 Apex Press Publishing House. All rights reserved.</p>
+			<div class="apf-bottom-links">
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms of Service</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.8" y2="1">
+      <stop stop-color="#261b25"/>
+      <stop offset=".55" stop-color="#8a342b"/>
+      <stop offset="1" stop-color="#e18a45"/>
+    </linearGradient>
+    <radialGradient id="fire">
+      <stop stop-color="#ffe59b"/>
+      <stop offset=".4" stop-color="#ffb14d" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#ed5933" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#bg)"/>
+  <circle cx="200" cy="334" r="192" fill="url(#fire)"/>
+  <path d="M200 127c-35 91 35 93-4 168-27-33-37-53-33-91-53 61-72 111-54 164 12 38 46 64 91 64 62 0 105-44 105-105 0-48-35-112-105-200Z" fill="#ffd879" opacity=".85"/>
+  <path d="M199 280c-19 46 19 58-2 92-17-17-20-33-18-47-28 39-36 61-26 87 8 21 26 33 49 33 32 0 54-23 54-54 0-37-28-75-57-111Z" fill="#a9362a"/>
+  <path d="M0 465h400v135H0Z" fill="#241821" opacity=".75"/>
+  <text x="200" y="72" fill="#ffd879" font-family="Georgia,serif" font-size="16" letter-spacing="5" text-anchor="middle">WHEN THE WORLD BURNS</text>
+  <text x="200" y="480" fill="#fff1dc" font-family="Georgia,serif" font-size="46" font-weight="bold" text-anchor="middle">THE LAST</text>
+  <text x="200" y="525" fill="#fff1dc" font-family="Georgia,serif" font-size="46" font-weight="bold" text-anchor="middle">EMBER</text>
+  <text x="200" y="565" fill="#ffd879" font-family="Georgia,serif" font-size="15" letter-spacing="4" text-anchor="middle">M. SAMPLE</text>
+</svg>

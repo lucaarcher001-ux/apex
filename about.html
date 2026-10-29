@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Apex Press - eBook & Publishing Services</title>
+    <script>
+        window.tailwind = {
+            config: {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                            serif: ['"Playfair Display"', 'serif'],
+                        },
+                        colors: {
+                            brand: {
+                                dark: '#111722',
+                                card: '#3a4149',
+                                accent: '#6366f1',
+                                gold: '#fbbf24'
+                            }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page">
+
+     <!-- Navigation Bar -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 px-6 lg:px-16 py-6 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-book-open-reader text-white text-lg"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-tight text-white font-serif">Apex Press</span>
+                    <span class="text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">Publishing House</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">Home</a>
+                <a href="bestsellers..html" class="hover:text-indigo-400 transition-colors">Bestsellers</a>
+                <a href="service.html" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="authors.html" class="hover:text-indigo-400 transition-colors">For Authors</a>
+                <a href="about.html" aria-current="page" class="text-white hover:text-indigo-400 transition-colors">About</a>
+            </nav>
+
+            <!-- Action CTA & Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a href="index.html#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-lg shadow-indigo-600/30 transition-all hover:-translate-y-0.5">
+                    <span>Submit Manuscript</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white p-2 text-xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-brand-dark/95 backdrop-blur-xl border-b border-gray-800 py-6 px-6 shadow-2xl transition-all">
+            <div class="flex flex-col gap-4 text-base font-medium text-gray-300">
+                <a href="index.html" class="hover:text-indigo-400">Home</a>
+                <a href="bestsellers..html" class="hover:text-indigo-400">Bestsellers</a>
+                <a href="service.html" class="hover:text-indigo-400">Services</a>
+                <a href="authors.html" class="hover:text-indigo-400">For Authors</a>
+                <a href="about.html" aria-current="page" class="text-white hover:text-indigo-400">About</a>
+                <a href="index.html#contact" class="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-lg shadow-indigo-600/30">
+                    <span>Submit Manuscript</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="badge-pill">
+                <i class="fa-solid fa-award"></i> 10 Years of Publishing Excellence
+            </div>
+            <h1>Transforming Stories into <span class="gold-text">Literary Legacies</span></h1>
+            <p class="hero-subtitle">For a decade, Apex Press has been a cornerstone of traditional and physical book publishing. Today, we bridge timeless literary craftsmanship with cutting-edge digital eBook innovation.</p>
+        </div>
+    </section>
+
+    <!-- Stats Bar Section -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-box">
+                <h3 class="counter" data-target="10">0</h3><span class="stat-plus">+</span>
+                <p>Years of Legacy</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="counter" data-target="450">0</h3><span class="stat-plus">+</span>
+                <p>Published Titles</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="counter" data-target="18">0</h3><span class="stat-plus">M+</span>
+                <p>Global Readers</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="counter" data-target="99.4">0</h3><span class="stat-plus">%</span>
+                <p>Author Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section">
+        <div class="container grid-2">
+            <div class="story-content">
+                <span class="sub-heading">Our Origin & Evolution</span>
+                <h2>From Physical Presses to Digital Masterpieces</h2>
+                <p>Founded over ten years ago as a boutique physical publishing house, Apex Press built its reputation on meticulous editing, premium book binding, and uncompromising editorial standards. We worked face-to-face with visionary authors, turning raw manuscripts into celebrated physical volumes on bookstore shelves.</p>
+                <p>As the literary world expanded into the digital frontier, we recognized that authors needed more than just a converter—they needed seasoned publishing veterans who understand book structure, pacing, and audience psychology. Today, we bring our decade of print expertise directly into professional eBook formatting, global distribution, and dynamic digital marketing.</p>
+                <div class="features-list">
+                    <div class="feature-item"><i class="fa-solid fa-circle-check"></i> 100% Royalties Retained by Authors</div>
+                    <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Professional Human Editing & Proofreading</div>
+                    <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Seamless Amazon KDP & Global Multi-Store Setup</div>
+                </div>
+            </div>
+            <div class="story-image-wrapper">
+                <div class="image-card glow-effect">
+                    <i class="fa-solid fa-book-open-reader watermark-icon"></i>
+                    <div class="card-quote">
+                        "Your story deserves absolute perfection—whether held in hands or read on screens."
+                        <span>— Apex Press Editorial Board</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Timeline Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="center-title">
+                <span class="sub-heading">Our Journey</span>
+                <h2>Milestones That Defined Apex Press</h2>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-nav">
+                    <button class="time-btn active" data-year="2016">2016</button>
+                    <button class="time-btn" data-year="2019">2019</button>
+                    <button class="time-btn" data-year="2023">2023</button>
+                    <button class="time-btn" data-year="2026">2026</button>
+                </div>
+                <div class="timeline-content-card">
+                    <div id="timeline-display">
+                        <h3>Foundation & Physical Print Mastery (2016)</h3>
+                        <p>Apex Press launched as a specialized physical publishing house, assisting regional authors with physical layout, hardcover binding, and traditional distribution channels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="center-title">
+                <span class="sub-heading">What Drives Us</span>
+                <h2>Our Core Publishing Pillars</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="icon-box"><i class="fa-solid fa-gem"></i></div>
+                    <h3>Uncompromising Quality</h3>
+                    <p>We treat every eBook with the same stringent typographical and editorial rigor we applied to premium hardcover print runs.</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon-box"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Author Empowerment</h3>
+                    <p>You maintain full ownership and creative direction over your work while our publishing veterans handle the heavy lifting.</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon-box"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Global Reach</h3>
+                    <p>From Amazon Kindle and Apple Books to Google Play and IngramSpark, we place your book in front of millions worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container cta-box">
+            <h2>Ready to Publish Your Next Bestseller?</h2>
+            <p>Leverage 10 years of professional publishing experience for your upcoming eBook or digital release.</p>
+            <a href="index.html#contact" class="btn-primary-large">Get Your Free Publishing Consultation</a>
+        </div>
+    </section>
+
+        <!-- Shared Apex Press footer -->
+        <footer class="apf-footer">
+            <div class="apf-top">
+                <div class="apf-intro">
+                    <p class="apf-eyebrow">Professional Book Writing, Publishing &amp; Marketing Services</p>
+                    <h2 class="apf-heading">We Publish Ideas, Dreams, <span>and Books</span></h2>
+                    <p class="apf-desc">Apex Press helps authors and thought leaders bring their books to life, from first draft to market-ready release, with full creative control staying in their hands.</p>
+                    <div class="apf-cta-row">
+                        <a href="index.html#contact" class="apf-btn apf-btn--solid">Start My Book</a>
+                        <a href="index.html#contact" class="apf-btn apf-btn--outline">Free Consultation</a>
+                    </div>
+                    <div class="apf-press">
+                        <span>Publishing partners</span>
+                        <div class="apf-press-logos">
+                            <span>Ingram</span>
+                            <span>Amazon KDP</span>
+                            <span>Apple Books</span>
+                            <span>Google Play</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="apf-marquee" aria-hidden="true">
+                    <div class="apf-col apf-col--1">
+                        <div class="apf-col-track">
+                            <div class="apf-card apf-card--1"><h5>Whispers From the Heart</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--2"><h5>The Storms in My Brain</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--3"><h5>A Destiny of Duty</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--4"><h5>The Beverly Hills Boy</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--1"><h5>Whispers From the Heart</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--2"><h5>The Storms in My Brain</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--3"><h5>A Destiny of Duty</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--4"><h5>The Beverly Hills Boy</h5><p>By Apex Press Author</p></div>
+                        </div>
+                    </div>
+                    <div class="apf-col apf-col--2">
+                        <div class="apf-col-track">
+                            <div class="apf-card apf-card--5"><h5>Calming the Darkness</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--6"><h5>Escape to Safety</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--2"><h5>Princess Santa</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--3"><h5>Run Shadow Run</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--5"><h5>Calming the Darkness</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--6"><h5>Escape to Safety</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--2"><h5>Princess Santa</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--3"><h5>Run Shadow Run</h5><p>By Apex Press Author</p></div>
+                        </div>
+                    </div>
+                    <div class="apf-col apf-col--3">
+                        <div class="apf-col-track">
+                            <div class="apf-card apf-card--4"><h5>One Hundred Artifacts</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--1"><h5>A Made Man</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--6"><h5>The Unsinkable Greta</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--5"><h5>Sierra Mad</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--4"><h5>One Hundred Artifacts</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--1"><h5>A Made Man</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--6"><h5>The Unsinkable Greta</h5><p>By Apex Press Author</p></div>
+                            <div class="apf-card apf-card--5"><h5>Sierra Mad</h5><p>By Apex Press Author</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apf-links">
+                <div class="apf-links-col">
+                    <h4>Company</h4>
+                    <a href="about.html" aria-current="page">About Us</a>
+                    <a href="authors.html">Our Authors</a>
+                    <a href="service.html">Services</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="apf-links-col">
+                    <h4>Services</h4>
+                    <a href="service.html#writing">Book Writing</a>
+                    <a href="service.html#publishing">Book Publishing</a>
+                    <a href="service.html#marketing">Book Marketing</a>
+                    <a href="service.html#design">Cover Design</a>
+                </div>
+                <div class="apf-links-col">
+                    <h4>Resources</h4>
+                    <a href="index.html#projects">Publishing Guide</a>
+                    <a href="index.html#projects">FAQs</a>
+                    <a href="index.html#projects">Author Portal</a>
+                    <a href="index.html#contact">Support</a>
+                </div>
+                <div class="apf-links-col apf-links-col--social">
+                    <h4>Follow Us</h4>
+                    <div class="apf-social">
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 2 .24 2.5.4a5 5 0 0 1 1.8 1.2 5 5 0 0 1 1.2 1.8c.2.5.4 1.3.4 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 2-.4 2.5a5 5 0 0 1-1.2 1.8 5 5 0 0 1-1.8 1.2c-.5.2-1.3.4-2.5.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.2-2.5-.4a5 5 0 0 1-1.8-1.2 5 5 0 0 1-1.2-1.8c-.2-.5-.4-1.3-.4-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-2 .4-2.5a5 5 0 0 1 1.2-1.8 5 5 0 0 1 1.8-1.2c.5-.2 1.3-.4 2.5-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.05A6.75 6.75 0 1 0 12 18.75 6.75 6.75 0 0 0 12 5.25zm0 11.13a4.38 4.38 0 1 1 0-8.76 4.38 4.38 0 0 1 0 8.76zm7-11.4a1.58 1.58 0 1 1-3.15 0 1.58 1.58 0 0 1 3.15 0z"/></svg></a>
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.7h2.6l.4-3h-3V8.3c0-.87.24-1.46 1.5-1.46h1.6V4.14C15.9 4.1 15 4 13.9 4 11.5 4 9.9 5.5 9.9 8v2.3H7.3v3h2.6V21h3.6z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3.5 9h3v11.5h-3zM9.5 9h2.9v1.57h.04c.4-.76 1.4-1.57 2.9-1.57 3.1 0 3.66 2.03 3.66 4.67v6.83h-3v-6.06c0-1.45-.03-3.3-2-3.3-2 0-2.3 1.57-2.3 3.2v6.16h-3z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apf-bottom">
+                <p id="apfYear">&copy; 2026 Apex Press Publishing House. All rights reserved.</p>
+                <div class="apf-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>

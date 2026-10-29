@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#142b3b"/>
+      <stop offset="1" stop-color="#39766f"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#f4c777" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#f4c777" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#bg)"/>
+  <circle cx="205" cy="265" r="180" fill="url(#glow)"/>
+  <path d="M0 420 108 300l66 74 85-132 141 178v180H0Z" fill="#10202d" opacity=".8"/>
+  <path d="M22 500 130 370l64 71 83-116 102 126" fill="none" stroke="#f4c777" stroke-opacity=".8" stroke-width="3"/>
+  <circle cx="200" cy="210" r="54" fill="none" stroke="#fff0c5" stroke-opacity=".8" stroke-width="2"/>
+  <path d="M200 137v146m-73-73h146m-125-52 104 104m0-104L148 262" stroke="#fff0c5" stroke-opacity=".55" stroke-width="1.5"/>
+  <text x="200" y="72" fill="#f4c777" font-family="Georgia,serif" font-size="16" letter-spacing="5" text-anchor="middle">A TALE OF DISCOVERY</text>
+  <text x="200" y="440" fill="#fff8e8" font-family="Georgia,serif" font-size="40" text-anchor="middle">THE HIDDEN</text>
+  <text x="200" y="488" fill="#fff8e8" font-family="Georgia,serif" font-size="48" font-weight="bold" text-anchor="middle">ATLAS</text>
+  <text x="200" y="548" fill="#f4c777" font-family="Georgia,serif" font-size="17" letter-spacing="4" text-anchor="middle">A. SAMPLE</text>
+</svg>

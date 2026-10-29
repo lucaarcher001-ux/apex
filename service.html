@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Apex Press writing, editing, design, publishing, distribution, marketing, and author growth services.">
+    <title>Publishing Services | Apex Press</title>
+    <script>
+        window.tailwind = {
+            config: {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                            serif: ['"Playfair Display"', 'serif'],
+                        },
+                        colors: {
+                            brand: {
+                                dark: '#111722',
+                                card: '#3a4149',
+                                accent: '#6366f1',
+                                gold: '#fbbf24'
+                            }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="services-page">
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 px-6 lg:px-16 py-6 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-book-open-reader text-white text-lg"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-tight text-white font-serif">Apex Press</span>
+                    <span class="text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">Publishing House</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300" aria-label="Main navigation">
+                <a href="index.html" class="hover:text-indigo-400 transition-colors">Home</a>
+                <a href="bestsellers..html" class="hover:text-indigo-400 transition-colors">Bestsellers</a>
+                <a href="service.html" aria-current="page" class="text-white hover:text-indigo-400 transition-colors">Services</a>
+                <a href="authors.html" class="hover:text-indigo-400 transition-colors">For Authors</a>
+                <a href="about.html" class="hover:text-indigo-400 transition-colors">About</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="index.html#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-lg shadow-indigo-600/30 transition-all hover:-translate-y-0.5">
+                    <span>Submit Manuscript</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white p-2 text-xl focus:outline-none" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-brand-dark/95 backdrop-blur-xl border-b border-gray-800 py-6 px-6 shadow-2xl transition-all">
+            <nav class="flex flex-col gap-4 text-base font-medium text-gray-300" aria-label="Mobile navigation">
+                <a href="index.html" class="hover:text-indigo-400">Home</a>
+                <a href="bestsellers..html" class="hover:text-indigo-400">Bestsellers</a>
+                <a href="service.html" aria-current="page" class="text-white hover:text-indigo-400">Services</a>
+                <a href="authors.html" class="hover:text-indigo-400">For Authors</a>
+                <a href="about.html" class="hover:text-indigo-400">About</a>
+                <a href="index.html#contact" class="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-lg shadow-indigo-600/30">
+                    <span>Submit Manuscript</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-hero">
+            <div class="services-container services-hero-layout">
+                <div class="services-hero-copy">
+                    <p class="services-kicker"><span></span> Apex Press Services</p>
+                    <h1>Every part of your book, <em>in good hands.</em></h1>
+                    <p class="services-lede">From the first outline to the readers who find your book, get experienced support at every stage of publishing.</p>
+                    <a class="services-primary-link" href="#service-list">Explore our services <i class="fa-solid fa-arrow-down"></i></a>
+                </div>
+                <aside class="services-hero-note" aria-label="Our publishing approach">
+                    <span class="services-note-number">07</span>
+                    <p>connected disciplines</p>
+                    <div class="services-note-rule"></div>
+                    <span class="services-note-caption">One publishing partner, from idea to audience.</span>
+                </aside>
+            </div>
+            <div class="services-hero-line" aria-hidden="true"></div>
+        </section>
+
+        <nav class="services-index" aria-label="Jump to a service category">
+            <div class="services-container services-index-inner">
+                <span class="services-index-label">Explore</span>
+                <a href="#writing">Writing</a>
+                <a href="#editing">Editing</a>
+                <a href="#design">Design</a>
+                <a href="#publishing">Publishing</a>
+                <a href="#distribution">Distribution</a>
+                <a href="#marketing">Marketing</a>
+                <a href="#author-growth">Author Growth</a>
+            </div>
+        </nav>
+
+        <section class="services-catalog" id="service-list">
+            <div class="services-container">
+                <div class="services-section-heading">
+                    <div>
+                        <p class="services-kicker"><span></span> The complete book journey</p>
+                        <h2>Publishing, built around <em>your goals.</em></h2>
+                    </div>
+                    <p>Choose the support you need now, then build on it as your book and audience grow.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card" id="writing">
+                        <div class="service-card-heading">
+                            <span class="service-number">01</span>
+                            <span class="service-icon"><i class="fa-solid fa-feather-pointed"></i></span>
+                            <h3>Writing</h3>
+                        </div>
+                        <ul>
+                            <li>Ghostwriting</li>
+                            <li>Book Outlining</li>
+                            <li>Book Development</li>
+                            <li>Rewriting</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card" id="editing">
+                        <div class="service-card-heading">
+                            <span class="service-number">02</span>
+                            <span class="service-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                            <h3>Editing</h3>
+                        </div>
+                        <ul>
+                            <li>Developmental Editing</li>
+                            <li>Copy Editing</li>
+                            <li>Line Editing</li>
+                            <li>Proofreading</li>
+                            <li>Beta Reading</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card" id="design">
+                        <div class="service-card-heading">
+                            <span class="service-number">03</span>
+                            <span class="service-icon"><i class="fa-solid fa-pen-ruler"></i></span>
+                            <h3>Design</h3>
+                        </div>
+                        <ul>
+                            <li>Book Cover Design</li>
+                            <li>Interior Formatting</li>
+                            <li>Typesetting</li>
+                            <li>Illustration</li>
+                            <li>eBook Formatting</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card" id="publishing">
+                        <div class="service-card-heading">
+                            <span class="service-number">04</span>
+                            <span class="service-icon"><i class="fa-solid fa-book-open"></i></span>
+                            <h3>Publishing</h3>
+                        </div>
+                        <ul>
+                            <li>eBook Publishing</li>
+                            <li>Print Publishing</li>
+                            <li>Hardcover Publishing</li>
+                            <li>ISBN &amp; Copyright Assistance</li>
+                            <li>Publishing Setup</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card" id="distribution">
+                        <div class="service-card-heading">
+                            <span class="service-number">05</span>
+                            <span class="service-icon"><i class="fa-solid fa-globe"></i></span>
+                            <h3>Distribution</h3>
+                        </div>
+                        <ul>
+                            <li>Retail Distribution</li>
+                            <li>Print-on-Demand</li>
+                            <li>International Distribution</li>
+                            <li>Bookstore Distribution</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card" id="marketing">
+                        <div class="service-card-heading">
+                            <span class="service-number">06</span>
+                            <span class="service-icon"><i class="fa-solid fa-bullhorn"></i></span>
+                            <h3>Marketing</h3>
+                        </div>
+                        <ul>
+                            <li>Book Launch Marketing</li>
+                            <li>Facebook &amp; Instagram Ads</li>
+                            <li>Google Ads</li>
+                            <li>Marketplace Advertising</li>
+                            <li>Social Media Marketing</li>
+                            <li>Email Marketing</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card service-card-growth" id="author-growth">
+                        <div class="service-card-heading">
+                            <span class="service-number">07</span>
+                            <span class="service-icon"><i class="fa-solid fa-chart-line"></i></span>
+                            <h3>Author Growth</h3>
+                        </div>
+                        <ul>
+                            <li>Author Website</li>
+                            <li>Author Branding</li>
+                            <li>PR &amp; Media Outreach</li>
+                            <li>Podcast Promotion</li>
+                            <li>Influencer Marketing</li>
+                            <li>Audiobook Production</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-cta">
+            <div class="services-container services-cta-inner">
+                <div>
+                    <p class="services-kicker"><span></span> Your next chapter</p>
+                    <h2>Let's make your book <em>happen.</em></h2>
+                </div>
+                <a href="index.html#contact" class="services-primary-link">Talk with our team <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="apf-footer">
+        <div class="apf-top services-footer-top">
+            <div class="apf-intro">
+                <p class="apf-eyebrow">Professional Book Writing, Publishing &amp; Marketing Services</p>
+                <h2 class="apf-heading">We Publish Ideas, Dreams, <span>and Books</span></h2>
+                <p class="apf-desc">Apex Press helps authors bring their books to life, from the first draft to a market-ready release.</p>
+                <div class="apf-cta-row">
+                    <a href="index.html#contact" class="apf-btn apf-btn--solid">Start My Book</a>
+                    <a href="index.html#contact" class="apf-btn apf-btn--outline">Free Consultation</a>
+                </div>
+                <div class="apf-press">
+                    <span>Publishing partner</span>
+                    <div class="apf-press-logos">
+                        <span>Amazon KDP</span>
+                        <span>Apple Books</span>
+                        <span>Ingram</span>
+                    </div>
+                </div>
+            </div>
+            <div class="services-footer-aside" aria-hidden="true">
+                <img src="images/thelittlebitofsweetness-fiction.jpg" alt="">
+            </div>
+        </div>
+        <div class="apf-links">
+            <div class="apf-links-col">
+                <h4>Company</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="service.html" aria-current="page">Services</a>
+            </div>
+            <div class="apf-links-col">
+                <h4>Services</h4>
+                <a href="#writing">Writing &amp; Editing</a>
+                <a href="#design">Design &amp; Formatting</a>
+                <a href="#publishing">Publishing</a>
+                <a href="#marketing">Marketing</a>
+            </div>
+            <div class="apf-links-col">
+                <h4>Get Started</h4>
+                <a href="index.html#contact">Publishing Consultation</a>
+                <a href="index.html#projects">Explore Our Work</a>
+            </div>
+            <div class="apf-links-col apf-links-col--social">
+                <h4>Follow Us</h4>
+                <div class="apf-social">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="apf-bottom">
+            <p id="apfYear">&copy; 2026 Apex Press Publishing House. All rights reserved.</p>
+            <div class="apf-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
